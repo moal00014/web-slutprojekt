@@ -1,21 +1,23 @@
+/*används för att styra padding och margin*/
 * {
   box-sizing: border-box;
 }
-
+/*typselektor för body, ändrar bakgrund färg och sidan height.*/
 body{
 	background-color: lightgray;
 	
 	width:98vw;
 }
 
-
+/*typselektor för header, ställer i grid, ä background färg och centrerar texten och texten färg är vit.*/
 header{
 	display:grid;
 	grid-area:header;
-	background-color: #00e600;
-	color: #003300;
+	background-color: #878db0;
+	color: white;
 	text-align:center;
 }
+/* Typselektor för nav. Ställer in grid, ändrar fontstorlek och typ, gör färgen mörkt. */
 nav{
 	display:grid;
 	grid-area:nav;
@@ -23,53 +25,55 @@ nav{
 	font-size:1.4em;
 	font-family:cursive;
 	font-weight:bold;
-}
 
+}
+/*Barnselektor för ul, ställer in grid, ändrar layout på nav och storlek, centrerar nav samt tar bort punkter(list-style-type) */
 nav ul{
 	display:grid;
-	grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+	grid-template-columns:1fr 1fr 1fr 1fr 1fr; 
 	grid-gap: 15px;
 	padding:0;
-	margin:0;
+	align-content: center;
 	list-style-type:none;	
 }
-
+/*tar bort understräck på nav */
 nav a{
 	text-decoration: none;
 }
-
+/*Barnselektor för li under nav, ställer in grid, centrerar texten, gör texten synlig och tjockare, ändrar färgen, ändrar hur högt ska det vara och nav högt. */
 nav li{
 	display:grid;
 	text-align:center;
 	border: 4px outset #323232;
 	border-radius:10%;
-	background: black;
 	background: #3377ff;
 	height:85%;
 	line-height:2.5;
 }
-
+/*gör grön färg runt opm varje li under nav. */
 nav li:hover{
-	border:4px inset yellow;	
+	border:4px inset green;	
 }
 
+/*gör svart runt om, boxen, ställer den till vänster, storlek på 20px, ändrar bredd, ändrar färgen, ändrar height och gör boxen scroll. */
 article{
-	
 	outline: 1px solid black;
 	float: left;
 	padding: 20px;
 	width: 68%;
-	background-color: #f1f1f1;
+	background-color: white;
 	height: 500px;
 	overflow:scroll;
 }
+
+/*gör boxen med liten line svart, ställer in grid, ställer texten till centeral, ändrar bakgrund fär, ändrar text färg, */
 aside{
     outline: 1px solid black;
 	display:grid;
     text-align: center;
     background-color: white;
 	color: black;
-	text-align: center;
+	
 	height: 500px;
 	width: 30%;
 	margin-left: auto;
@@ -78,8 +82,186 @@ aside{
 
 footer{
     
-	background-color: darkorange;
+	background-color: #8d84a1;
 	color:#fafafa;
 	text-align:center;
 	line-height:5em;
+}
+
+main{
+	display:grid;
+	grid-area:content;
+	background-color: white;
+	padding:10px;
+	
+}
+img{
+	width: 200px;
+	height: 200px;
+}
+.musikinstrument{
+	width: 100%;
+	background-color: white;
+}
+table {
+    font-family: sans-serif ,arial ;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid black;
+    text-align: center;
+    padding: 15px;
+}
+
+tr:nth-child(even) {
+    color:black;
+   
+}
+
+th:nth-child(1){
+text-align:left;
+}
+
+td:nth-child(1){
+text-align:left;
+}
+
+td:nth-child(4){
+text-align:right;
+}
+
+th:nth-child(4){
+text-align:right;
+}
+
+
+tr:nth-child(odd) {
+    color: black;
+}
+
+tr:nth-child(1){
+background-color: white;
+}
+
+tr:nth-child(1) {
+    text-align: left;
+}  
+
+th{
+color: black;
+}
+
+img, table, iframe, video {
+	max-width: 100%;
+}
+
+.andranav{
+	display: grid;
+	justify-content: right;
+	padding: 0;
+}
+
+.andranav li{
+	height: 85%;
+	grid-gap: 10px;
+	font-size:1em;
+	padding: 0;
+}
+.låtar{
+	outline: 1px solid black;
+	float: left;
+	padding: 20px;
+	width: 49%;
+	background-color: white;
+	height: 500px;
+	overflow:scroll;
+}
+.arabiskalåtar{
+	outline: 1px solid black;
+    background-color: white;
+	color: black;
+	text-align: left;
+	height: 500px;
+	width: 49%;
+	overflow:scroll;
+	padding: 20px;
+}
+
+.fonttyp{
+	font-family: nos;
+}
+
+@font-face{
+	font-family: nos;
+	src: url(fonts/JMH-Typewriter.ttf);
+}
+
+@media screen and (max-width: 1000px){
+	header{
+		background-color: rgb(0,255,255)
+	}
+	
+	nav ul{
+	display:grid;
+	grid-template-columns:1fr;
+	
+	}
+	
+	.andranav{
+		grid-template-columns:1fr;
+	}
+	table {
+    font-family: sans-serif ,arial ;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid black;
+    text-align: center;
+    padding: 15px;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(255,0,255);
+    color:black;
+   
+}
+
+th:nth-child(1){
+text-align:left;
+}
+
+td:nth-child(1){
+text-align:left;
+}
+
+td:nth-child(4){
+text-align:right;
+}
+
+th:nth-child(4){
+text-align:right;
+}
+
+
+tr:nth-child(odd) {
+    background-color: rgb(255,255,0);
+    color: black;
+}
+
+tr:nth-child(1){
+background-color: white;
+}
+
+tr:nth-child(1) {
+    text-align: left;
+}  
+
+th{
+color: black;
+}
+	
 }
