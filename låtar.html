@@ -1,16 +1,25 @@
+<!--Är en av standarderna inom html-->
 <!DOCTYPE html>
-<html lang="sv">
-<head>
-    <meta charset="utf-8">
+<!--Gör språket svenska i sidan -->
+<html lang="sv"> 
+<!--Börjar en del av sidan men man kan inte se det här i sidan-->
+<head> 
+<!--Det är en typ av teckenkodning från unikod -->
+    <meta charset="utf-8"> 
+	<!--här är sidann namn på chrome eller motsvarande-->
     <title>Olika låtar</title>
-    <link href="style.css" rel="stylesheet">
-    <meta name=”viewport” content=”width=device-width, initial-scale=1”>
+    <!--länkar till css fil för att ändra layout, färger och motsvarande-->
+	<link href="style.css" rel="stylesheet">
+    <!-- Detta är skalan för skärmen som hemsidan ska se ut på -->
+	<meta name=”viewport” content=”width=device-width, initial-scale=1”>
 </head>
+<!--sidans innehåll börjar här-->
 <body>
+<!--sidans rubrik-->
     <header>
         <h1> Låtar </h1>
     </header>
-    
+    <!--används för att kunna använda länkar under header-->
 	<nav>
         <ul>
           <li><a href="index.html">Start</a></li>
@@ -21,7 +30,7 @@
           
         </ul>
       </nav>
-	  
+	  <!--används för att skapa en header till-->
 	  <nav class="andranav">
         <ul>
           <li><a href="kändisar.html">Kändisar</a></li>
@@ -29,7 +38,8 @@
           <li><a href="låtar.html">Olika låtar</a></li>
         </ul>
     </nav>
-	
+	<!--semantik för att visa vad som står i sidan-->
+	<!--skapar audio i sidan-->
 	<article class="låtar">
 	<h2>Olika låtar</h2>
 	<p>Carly</p>
@@ -51,7 +61,8 @@
 	
 	</article>
 	
-	
+	<!--semantik för att visa vad som står i sidan-->
+	<!--skapar audio i sidan-->
 	<aside class="arabiskalåtar">
 	<h3>Arabiska låtar</h3>
 	
@@ -74,6 +85,7 @@
 	
 	</aside>
 	
+	<!--sidans längs ner-->
 	<footer>
 		<p>Musiker</p>
 	</footer>

@@ -1,16 +1,26 @@
+<!--Är en av standarderna inom html-->
 <!DOCTYPE html>
+<!--Gör språket svenska i sidan -->
 <html lang="sv">
+<!--Börjar en del av sidan men man kan inte se det här i sidan-->
 <head>
+<!--Det är en typ av teckenkodning från unikod -->
     <meta charset="utf-8">
+<!--här är sidann namn på chrome eller motsvarande-->
     <title>Start Sida</title>
+<!--länkar till css fil för att ändra layout, färger och motsvarande-->
     <link href="style.css" rel="stylesheet">
+<!-- Detta är skalan för skärmen som hemsidan ska se ut på -->
     <meta name=”viewport” content=”width=device-width, initial-scale=1.0”>
+
 </head>
+<!--sidans innehåll börjar här-->
 <body>
+<!--sidans rubrik-->
     <header>
         <h1> Musik </h1>
     </header>
-    
+    <!--används för att kunna använda länkar under header-->
 	<nav>
         <ul>
           <li><a href="index.html">Start</a></li>
@@ -22,18 +32,20 @@
         </ul>
       </nav>
 	
+	<!--semantik för att visa vad som står i sidan-->
 	<article>
 		<h2>Välkommen till min musik sida</h2>
 		<p class="fonttyp">På denna sida kommer du att lära känna mer om musik och lär dig vilka typer av musik finns.</p>
 		<p class="fonttyp">Syftet är att du ska veta mer om musiken.</p>
 	</article>
 	
+	<!--semantik för att visa vad som står i sidan-->
 	<aside>
 		<h3>News</h3>
 		<p> Här kommer info om musiken</p>
 	</aside>
 
-
+<!--sidans längs ner-->
     <footer>
 		<p>Musiker</p>
 	</footer>

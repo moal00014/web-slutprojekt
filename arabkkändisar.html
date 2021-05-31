@@ -1,16 +1,25 @@
+<!--Är en av standarderna inom html-->
 <!DOCTYPE html>
+<!--Gör språket svenska i sidan -->
 <html lang="sv">
+<!--Börjar en del av sidan men man kan inte se det här i sidan-->
 <head>
+<!--Det är en typ av teckenkodning från unikod -->
     <meta charset="utf-8">
+<!--här är sidann namn på chrome eller motsvarande-->
     <title>Musik Kändisar</title>
-    <link href="style.css" rel="stylesheet">
-    <meta name=”viewport” content=”width=device-width, initial-scale=1”>
+    <!--länkar till css fil för att ändra layout, färger och motsvarande-->
+	<link href="style.css" rel="stylesheet">
+    <!-- Detta är skalan för skärmen som hemsidan ska se ut på -->
+	<meta name=”viewport” content=”width=device-width, initial-scale=1”>
 </head>
+<!--sidans innehåll börjar här-->
 <body>
+<!--sidans rubrik-->
     <header>
         <h1> Arabiska Musik Kändisar </h1>
     </header>
-    
+    <!--används för att kunna använda länkar under header-->
 	<nav>
         <ul>
           <li><a href="index.html">Start</a></li>
@@ -21,7 +30,7 @@
           
         </ul>
       </nav>
-	  
+	  <!--används för att skapa en header till-->
 	  <nav class="andranav">
         <ul>
           <li><a href="kändisar.html">Kändisar</a></li>
@@ -29,10 +38,11 @@
           <li><a href="låtar.html">Olika låtar</a></li>
         </ul>
     </nav>
-	  		<main class="kändisar">
+	  		<!--semantik för att visa vad som står i sidan-->
+			<main class="kändisar">
 		
 		<h2>Arabiska Musik Kändisar</h2>
-		
+		<!--skapar en tabell-->
 		<table style="width:100%">
   <tr>
      <th>Namn</th>
@@ -67,7 +77,7 @@
 	   
 </table>
 	
-	
+	<!--skapar en ny rubrik och under skapar bilder.-->
 		<h3>Bilder på kändisar</h3>
 	<p>Nancy</p>
 	<p><img src="nancy.jpg" alt="Bild på nancy"></p>
@@ -84,8 +94,7 @@
 	
 </main>
 
-
-	
+	<!--sidans längs ner-->
 	<footer>
 		<p>Musiker</p>
 	</footer>

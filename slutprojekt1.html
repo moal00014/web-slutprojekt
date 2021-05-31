@@ -1,16 +1,25 @@
+<!--Är en av standarderna inom html-->
 <!DOCTYPE html>
+<!--Gör språket svenska i sidan -->
 <html lang="sv">
+<!--Börjar en del av sidan men man kan inte se det här i sidan-->
 <head>
+<!--Det är en typ av teckenkodning från unikod -->
     <meta charset="utf-8">
+<!--här är sidann namn på chrome eller motsvarande-->
     <title> Instrument </title>
+<!--länkar till css fil för att ändra layout, färger och motsvarande-->
     <link href="style.css" rel="stylesheet">
+<!-- Detta är skalan för skärmen som hemsidan ska se ut på -->
     <meta name=”viewport” content=”width=device-width, initial-scale=1”>
 </head>
+<!--sidans innehåll börjar här-->
 <body>
+<!--sidans rubrik-->
     <header>
         <h1> Musik instrument </h1>
     </header>
-    
+    <!--används för att kunna använda länkar under header-->
 	<nav>
         <ul>
           <li><a href="index.html">Start</a></li>
@@ -20,7 +29,7 @@
 		  <li><a href="login.html">Logga in</a></li>   
         </ul>
     </nav>
-	
+	<!--används för att skapa en header till-->
 	<nav class="andranav">
         <ul>
           <li><a href="kändisar.html">Kändisar</a></li>
@@ -29,10 +38,11 @@
         </ul>
     </nav>
 	
+<!--semantik för att visa vad som står i sidan-->
 		<article class="musikinstrument">
 		
 		<h2>Olika musikinstrument</h2>
-		
+		<!--skapar en tabell-->
 		<table style="width:100%">
   <tr>
      <th>Namn</th>
@@ -60,12 +70,11 @@
     <td>Tyskland</td>
 	</tr>
 </table>
-	
+	<!--länklar till wikipedia-->
 	<p><a href="https://sv.wikipedia.org/wiki/Lista_%C3%B6ver_musikinstrument">Läs mer om de olika musikinstrument</a></p>
 	</article>
 	
-	
-
+	<!--sidans längs ner-->
 <footer>
 		<p>Musiker</p>
 	</footer>

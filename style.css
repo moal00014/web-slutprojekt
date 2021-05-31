@@ -66,28 +66,28 @@ article{
 	overflow:scroll;
 }
 
-/*gör boxen med liten line svart, ställer in grid, ställer texten till centeral, ändrar bakgrund fär, ändrar text färg, */
+/*gör boxen med liten line svart, ställer in grid, ställer texten till centeral, ändrar bakgrund fär, ändrar text färg, ändrar sidans height ändrar sidans bredd, */
 aside{
     outline: 1px solid black;
 	display:grid;
     text-align: center;
     background-color: white;
 	color: black;
-	
 	height: 500px;
 	width: 30%;
 	margin-left: auto;
 	overflow:scroll;
 }
 
+/*Längst ner i sidan, ändrar bakgrund färg, ändrar textens färg, centrerar texten, ändrar height. */
 footer{
-    
 	background-color: #8d84a1;
 	color:#fafafa;
 	text-align:center;
 	line-height:5em;
 }
 
+/*ställer in grid, ställer in area, ändrar background färg och boxens area. */
 main{
 	display:grid;
 	grid-area:content;
@@ -95,80 +95,94 @@ main{
 	padding:10px;
 	
 }
+
+/*ändrar bildens storlek. */
 img{
 	width: 200px;
 	height: 200px;
 }
+/*länkar till rn klass, ändrar bredd och bakgrund färg. */
 .musikinstrument{
 	width: 100%;
 	background-color: white;
 }
+
+/*Selektor för tabell, ändrar fonten och bredd.*/
 table {
     font-family: sans-serif ,arial ;
     border-collapse: collapse;
     width: 100%;
 }
-
+/*ändrar boxens yta, centrerar texten och ändrar på boxens area*/
 td, th {
     border: 1px solid black;
     text-align: center;
     padding: 15px;
 }
 
+/*ändrar text färgen till svart  */
 tr:nth-child(even) {
     color:black;
    
 }
-
+/*ställer rubriken ui tabellen till vänsten*/
 th:nth-child(1){
 text-align:left;
 }
-
+/*ställer tabellens innehåll till vänster*/
 td:nth-child(1){
 text-align:left;
 }
-
+/*ställer högre delen av tabellen till höger*/
 td:nth-child(4){
 text-align:right;
 }
-
+/*ställer en del av rubriken i tabellen till höger.*/
 th:nth-child(4){
 text-align:right;
 }
 
-
+/*odda tal i tabellen färgas med svart*/
 tr:nth-child(odd) {
     color: black;
 }
 
+/*ändrar färgen i tabellen till vit. */
 tr:nth-child(1){
 background-color: white;
 }
 
+/*ställer en del av tabellens innehåll till vänster.*/
 tr:nth-child(1) {
     text-align: left;
 }  
 
+/*rubrikens i tabellen färgas svart*/
 th{
 color: black;
 }
 
+/* grupptypselektor för img, table, iframe, svg och video. Gör så att maxbredden är 100% av den tillgängliga ytan.*/
 img, table, iframe, video {
 	max-width: 100%;
 }
 
+/*länkar till en klass i naven i sidan musikinstrument*/
 .andranav{
 	display: grid;
 	justify-content: right;
 	padding: 0;
 }
 
+/*ändrar layout i nven som klassen tillhör till */
 .andranav li{
 	height: 85%;
 	grid-gap: 10px;
 	font-size:1em;
 	padding: 0;
 }
+
+/*länkar till musikinstrument sidan, ändrar layout i sidan, bredd, färgen och boxen */
 .låtar{
 	outline: 1px solid black;
 	float: left;
@@ -178,6 +192,8 @@ img, table, iframe, video {
 	height: 500px;
 	overflow:scroll;
 }
+
+/*länkar till musikinstrument sidan, ändrar layout i sidan, bredd, färgen och boxen */
 .arabiskalåtar{
 	outline: 1px solid black;
     background-color: white;
@@ -188,16 +204,16 @@ img, table, iframe, video {
 	overflow:scroll;
 	padding: 20px;
 }
-
+/*länkar till en text i index och ändrar fonten.*/
 .fonttyp{
 	font-family: nos;
 }
-
+/*Gör att fonten ändrars. */
 @font-face{
 	font-family: nos;
 	src: url(fonts/JMH-Typewriter.ttf);
 }
-
+/*när bredden ändras till 1000px ändras färgen i header, layout i naven och färgen i tabellar i sidan. */
 @media screen and (max-width: 1000px){
 	header{
 		background-color: rgb(0,255,255)

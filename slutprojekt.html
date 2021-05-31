@@ -1,16 +1,25 @@
+<!--Är en av standarderna inom html-->
 <!DOCTYPE html>
+<!--Gör språket svenska i sidan -->
 <html lang="sv">
+<!--Börjar en del av sidan men man kan inte se det här i sidan-->
 <head>
+<!--Det är en typ av teckenkodning från unikod -->
     <meta charset="utf-8">
+<!--här är sidann namn på chrome eller motsvarande-->
     <title>Musik typer</title>
+<!--länkar till css fil för att ändra layout, färger och motsvarande-->
     <link href="style.css" rel="stylesheet">
+<!-- Detta är skalan för skärmen som hemsidan ska se ut på -->
     <meta name=”viewport” content=”width=device-width, initial-scale=1”>
 </head>
+<!--sidans innehåll börjar här-->
 <body>
+<!--sidans rubrik-->
     <header>
         <h1> Musik typer </h1>
     </header>
-    
+<!--används för att kunna använda länkar under header-->
 	<nav>
         <ul>
           <li><a href="index.html">Start</a></li>
@@ -21,7 +30,9 @@
           
         </ul>
       </nav>
+<!--semantik för att visa vad som står i sidan-->
 	  <main>
+<!--semantik för att visa vad som står i sidan-->
 		<section>
 			<h2>Lyssna</h2>
 			<h3>Typisk Musik</h3>
@@ -30,6 +41,7 @@
 			<p>Det började i forntiden</p>
 			<p><a href="https://sv.wikipedia.org/wiki/Musikens_historia">Länk till Wikipedias sida om musik</a></p>
 		</section>
+<!--semantik för att visa vad som står i sidan-->
 		<section>
 			<h3>Arabic</h3>
 			<p>Arabisk musik, emedan den är oberoende och mycket levande, har en lång historia av samspel med många andra regionala musikaliska stilar och genrer. Det är en blandning av arabernas musik på arabiska halvön och musiken hos alla de folk som tillsammans utgör den arabiska världen idag. Dessutom påverkas den och har påverkats av forntida egyptisk, antik grekisk musik, persisk musik, kurdisk musik, assyrisk musik, turkisk musik, indisk musik, berbisk musik, afrikansk musik (swahili) och europeisk musik (flamenco).</p>
@@ -38,17 +50,18 @@
 			<a href="https://sv.wikipedia.org/wiki/Arabisk_musik">Länk till Wikipedias sida om Arabisk musik</a>
 		</section>
 		
-		<h3>Bilder och videor på musik typer</h3>
+		<h3>Bilder och videor på musik typer</h3> <!--rubrik-->
+		<!--förklaras att det är en figur som ska dtå här-->
 		<figure>
-		<iframe width="500" height="350" src="https://www.youtube.com/embed/1KKL-iW5JKo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<iframe width="500" height="350" src="https://www.youtube.com/embed/1KKL-iW5JKo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <!--används för att kunna ha youtube video länken-->
 		</figure>
-		<img src="man.jpg" alt="Man som trakterar">
-		
+		<img src="man.jpg" alt="Man som trakterar"> <!--skapar bild.-->
+		<!--skapar video-->
 		<video width="350" height="240" controls>
 		<source src="movie.mp4" type="video/mp4">
 		
 	</main>
-
+<!--sidans längs ner-->
 	<footer>
 		<p>Musiker</p>
 	</footer>
