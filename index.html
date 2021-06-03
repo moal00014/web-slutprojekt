@@ -11,7 +11,7 @@
 <!--länkar till css fil för att ändra layout, färger och motsvarande-->
     <link href="style.css" rel="stylesheet">
 <!-- Detta är skalan för skärmen som hemsidan ska se ut på -->
-    <meta name=”viewport” content=”width=device-width, initial-scale=1.0”>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
 <!--sidans innehåll börjar här-->
@@ -21,17 +21,19 @@
         <h1> Musik </h1>
     </header>
     <!--används för att kunna använda länkar under header-->
+	
 	<nav>
-        <ul>
+        <ol start="1">
           <li><a href="index.html">Start</a></li>
           <li><a href="slutprojekt.html">Musik Typer</a></li>
           <li><a href="slutprojekt1.html">Musik instrument</a></li>
           <li><a href="slutprojekt2.html">Om oss</a></li>
 		  <li><a href="login.html">Logga in</a></li>
           
-        </ul>
+        </ol>
       </nav>
 	
+	<main>
 	<!--semantik för att visa vad som står i sidan-->
 	<article>
 		<h2>Välkommen till min musik sida</h2>
@@ -42,9 +44,12 @@
 	<!--semantik för att visa vad som står i sidan-->
 	<aside>
 		<h3>News</h3>
-		<p> Här kommer info om musiken</p>
+		<p class="news"> Här kommer info om musiken</p>
 	</aside>
-
+	
+	<div class="a">Welcome to Dubai</div>
+	
+</main>
 <!--sidans längs ner-->
     <footer>
 		<p>Musiker</p>

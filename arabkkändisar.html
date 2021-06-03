@@ -11,7 +11,7 @@
     <!--länkar till css fil för att ändra layout, färger och motsvarande-->
 	<link href="style.css" rel="stylesheet">
     <!-- Detta är skalan för skärmen som hemsidan ska se ut på -->
-	<meta name=”viewport” content=”width=device-width, initial-scale=1”>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <!--sidans innehåll börjar här-->
 <body>
@@ -20,6 +20,7 @@
         <h1> Arabiska Musik Kändisar </h1>
     </header>
     <!--används för att kunna använda länkar under header-->
+
 	<nav>
         <ul>
           <li><a href="index.html">Start</a></li>
@@ -39,43 +40,48 @@
         </ul>
     </nav>
 	  		<!--semantik för att visa vad som står i sidan-->
-			<main class="kändisar">
+	<main class="kändisar">
 		
 		<h2>Arabiska Musik Kändisar</h2>
 		<!--skapar en tabell-->
-		<table style="width:100%">
-  <tr>
-     <th>Namn</th>
-    <th>Född</th>
-	<th>Vart?</th>
-  </tr>
-  <tr>
-    <td>Nancy Ajram</td>
-	<td>1983</td>
-	<td>Lebanon</td>
-  </tr>
-  <tr>
-    <td>Kazim Al Sahir</td>
-    <td>1957</td>
-	<td>Iraq</td>
-  </tr>
-  <tr>
-	<td>Amr Diab</td>
-    <td>1961</td>
-	<td>Egypten</td>
-  </tr>
-   <tr>
-	<td>Tamer Hosni</td>
-    <td>1977</td>
-	<td>Egypten</td>
+	<table>
+		<thead>
+		<tr>
+			<th scope="col">Namn</th>
+			<th scope="col">Född</th>
+			<th scope="col">Vart?</th>
 	</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td>Nancy Ajram</td>
+			<td>1983</td>
+			<td>Lebanon</td>
+	</tr>
+		<tr>
+			<td>Kazim Al Sahir</td>
+			<td>1957</td>
+			<td>Iraq</td>
+	</tr>
+		<tr>
+			<td>Amr Diab</td>
+			<td>1961</td>
+			<td>Egypten</td>
+	</tr>
+		<tr>
+			<td>Tamer Hosni</td>
+			<td>1977</td>
+			<td>Egypten</td>
+	</tr>
+	</tbody>
+	<tfoot>
 	   <tr>
-	<td>Haifa Wehbe</td>
-    <td>1976</td>
-	<td>Lebanon</td>
+			<td>Haifa Wehbe</td>
+			<td>1976</td>
+			<td>Lebanon</td>
 	</tr>
-	   
-</table>
+	</tfoot>
+	</table>
 	
 	<!--skapar en ny rubrik och under skapar bilder.-->
 		<h3>Bilder på kändisar</h3>
@@ -92,7 +98,7 @@
 
 	
 	
-</main>
+	</main>
 
 	<!--sidans längs ner-->
 	<footer>

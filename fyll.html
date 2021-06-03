@@ -11,7 +11,7 @@
     <!--länkar till css fil för att ändra layout, färger och motsvarande-->
 	<link href="style.css" rel="stylesheet"> <!-- -->
     <!-- Detta är skalan för skärmen som hemsidan ska se ut på -->
-	<meta name=”viewport” content=”width=device-width, initial-scale=1”> <!-- -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 <!--sidans innehåll börjar här-->
@@ -47,7 +47,35 @@
 					<input name="telefon" id="telefon" type="tel" required>
 				</p>
 			</fieldset>
-
+			
+			<fieldset>
+			
+			<legend>Skriv vad du tycker!</legend>
+			<label for="text"></label>
+			<textarea id="text" name="text"></textarea>
+			
+			</fieldset>
+			
+			<fieldset>
+			<legend>Välja din spännande musik!</legend>
+				<input type="radio" id="Kadim" name="gender" value="Kadim">
+				<label for="Kadim">Kadim</label><br>
+				<input type="radio" id="Nancy" name="gender" value="Nancy">
+				<label for="Nancy">Nancy</label><br>
+				<input type="radio" id="Kate" name="gender" value="Kate">
+				<label for="Kate">Kate</label>
+			</fieldset>
+			
+			<fieldset>
+			<legend>Välja din musikinstrument!</legend>
+			<input type="checkbox" id="piano" name="piano1" value="Piano">
+				<label for="piano"> Piano </label><br>
+				<input type="checkbox" id="gitarr" name="gitarr2" value="Gitarr">
+				<label for="gitarr"> Gitarr </label><br>
+				<input type="checkbox" id="Violin" name="Violin3" value="Violin">
+				<label for="Violin"> Violin </label>
+			</fieldset>
+			
 			<fieldset>
 				<legend>Vem brukar du lyssna på?</legend>
 				<p>

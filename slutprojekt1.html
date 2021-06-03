@@ -11,7 +11,7 @@
 <!--länkar till css fil för att ändra layout, färger och motsvarande-->
     <link href="style.css" rel="stylesheet">
 <!-- Detta är skalan för skärmen som hemsidan ska se ut på -->
-    <meta name=”viewport” content=”width=device-width, initial-scale=1”>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <!--sidans innehåll börjar här-->
 <body>
@@ -20,6 +20,7 @@
         <h1> Musik instrument </h1>
     </header>
     <!--används för att kunna använda länkar under header-->
+
 	<nav>
         <ul>
           <li><a href="index.html">Start</a></li>
@@ -38,41 +39,44 @@
         </ul>
     </nav>
 	
+	<main class="omoss">
 <!--semantik för att visa vad som står i sidan-->
 		<article class="musikinstrument">
 		
 		<h2>Olika musikinstrument</h2>
 		<!--skapar en tabell-->
-		<table style="width:100%">
-  <tr>
-     <th>Namn</th>
-    <th>År</th>
-	<th>Vart?</th>
-  </tr>
-  <tr>
-    <td>Gitarr</td>
-	<td>1200</td>
-    <td>Spanien</td>
-  </tr>
-  <tr>
-    <td>Piano</td>
-    <td>1709</td>
-    <td>Florens</td>
-  </tr>
-  <tr>
-	<td>Violin</td>
-    <td>1400-1500 talet</td>
-    <td>Italien</td>
-  </tr>
-   <tr>
-	<td>Bastrumpet</td>
-    <td>1800-talet</td>
-    <td>Tyskland</td>
+		<table>
+	<tr>
+			<th>Namn</th>
+			<th>År</th>
+			<th>Vart?</th>
+	</tr>
+	<tr>
+			<td>Gitarr</td>
+			<td>1200</td>
+			<td>Spanien</td>
+	</tr>
+	<tr>
+			<td>Piano</td>
+			<td>1709</td>
+			<td>Florens</td>
+	</tr>
+	<tr>
+		<td>Violin</td>
+		<td>1400-1500 talet</td>
+		<td>Italien</td>
+	</tr>
+	<tr>
+		<td>Bastrumpet</td>
+		<td>1800-talet</td>
+		<td>Tyskland</td>
 	</tr>
 </table>
 	<!--länklar till wikipedia-->
 	<p><a href="https://sv.wikipedia.org/wiki/Lista_%C3%B6ver_musikinstrument">Läs mer om de olika musikinstrument</a></p>
 	</article>
+	
+</main>
 	
 	<!--sidans längs ner-->
 <footer>
